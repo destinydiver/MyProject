@@ -1,52 +1,76 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>My Front End Web Development Class Project</title>
-
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>My Class Project</title>
   <meta name="description" content="Kevin's Awesome Truck Rebuild">
   <meta name="author" content="Chuck Winters">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-
-  <link rel="stylesheet" href="fonts.css">
-
+  <link rel="stylesheet" href="newStyles.css" type="text/css">
+  <link rel="stylesheet" href="fonts">
 </head>
 
 <body>
-  <header id="masthead" class="site-header" role="banner">
+  <header class="site-header">
+              <h1 class="name">KR Redeemed Rebuilds</h1>
 
-  <div class="wrap">
+                <ul class="main-nav">
+                  <li><a href="#">Welcome</a></li>
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+ </header>
 
-    <div class="section group">
-          <div class="col span_1_of_2">
-             <a href="#"><img class="nav-logo" src="img/blueTruck.jpg" alt="Pretty Blue Truck s10"></a>
-          </div>
-          <div class="col span_1_of_2">
-                <nav class="main-nav" id="main-nav" role="navigation">
-                    <ul>
-                      <li><a href="#">Welcome</a></li>
-                      <li><a href="#">History</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-          </div>
+ <div class="banner">
+   <h1>Check out Kevin's sweet rides!</h1>
+   <span class="tagline">Located in Camp Taylor , the heart of Louisville</span>
+ </div>
+
+ <!--Email -->
+ <section id="nwsltr" class="nwsltr">
+
+   <div class="wrap">
+       <div class="section group">
+         <h4>Join our mailing list and get updates on our stock of parts and finished rebuilds.</h4>
+
+         <form action="/#my-handling-form-page" method="post">
+           <label class="nwsltr-label">Your Email</label>
+           <input class="nwsltr-input" type="email" placeholder="johndoe@yahoo.com" id="email-field">
+           <button class="nwsltr-btn" type="submit" >Register</button>
+           <input class="questions-input" type="comment-field" placeholder="put your questions here." id="questions-field">
+           <button class="questions-btn" type="submit" >Submit Questions</button>
+         </form>
+
+       </div>
+         <h4 style="clear: both">Please feel free to contact us to request a quote on a rebuild job, hard to find part, or just to join some fellow S10 enthusiasts.</h4>
+   </div>
+
+ </section>
+
+ <!--Footer -->
+
+ <footer>
+
+   <div class="wrap">
+
+     <div class="section group">
+
+       <div class="col span_1_of_2 text-left">
+
+         KR Redeemed 2017
+
+       </div>
+
+     <div class="col span_1_of_2 text-right">
+
+       <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a>
+
      </div>
 
-     <div class="hero-text span_2_of_2">
-            <h1>Kevin's Trucks</h1>
-            <p>Located in Camp Taylor , the heart of Louisville</p>
-            <a href="#" class="hero-button">View Menu</a>
-     </div>
+   </div>
 
-  </div>
-
-</header>
-
-
-
+ </div></footer>
 
 
 
