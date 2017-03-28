@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 /* =================================
@@ -212,12 +213,229 @@ footer {
   .main-nav {
 		display: flex;
 
+=======
+
+
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto';
+	line-height: 1.6;
+	color: #3a3a3a;
+	margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+h2,
+h3,
+a {
+	color: #093a58;
+}
+h2,
+h3 {
+	margin-top: 0;
+}
+a {
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+.site-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+  background-color: tomato;
+	align-items: center;
+	text-align: center;
+}
+.banner {
+  background-color: #333333;
+  background-image: url('img/blueTruck.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 48px;
+  padding: 3.2em 0;
+  color: #FFFFFF;
+  text-align: center;
+  height: 300px;
+	font-size: .7em;
+	margin: auto;
+}
+
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+.feat-img {
+	border-radius: 5px;
+}
+.tagline {
+  font-size: 1.4em;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+.name {
+	font-size: 1.35em;
+	margin: 0;
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+.main-nav {
+	margin-top: 5px;
+}
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+.main-nav a {
+	font-size: .95em;
+	color: #3a3a3a;
+	text-transform: uppercase;
+}
+.main-nav a:hover {
+	color: white;
+	background-color: #871719;
+}
+
+/* ==========================================================================
+   FORMS
+   ========================================================================== */
+
+label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #FFC400;
+  color: #871719;
+  font-family: 'Roboto Slab', serif;
+  font-size: 80%;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 40px;
+  width: 100%;
+}
+
+.nwsltr-label {
+    float: left;
+    display: block;
+    width: 100%;
+    margin: 0 0 16px 0;
+}
+
+.nwsltr-input {
+    display: block;
+    border: 1px solid #c0af8e;
+    border-radius: 3px;
+    height: 40px;
+    padding: 8px;
+    margin: 0 0 10px 0;
+    font-size: 100%;
+    width: 100%;
+}
+.questions-input {
+	display: block;
+	border: 1px solid #c0af8e;
+	border-radius: 3px;
+	height: 150px;
+	padding: 8px;
+	margin: 0px 0 10px 0;
+	font-size: 100%;
+	width: 100%;
+}
+
+.nwsltr-btn,
+.questions-btn {
+    background-color: #873c17;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 80%;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 40px;
+    float: right;
+    display: block;
+}
+
+.nwsltr-btn:hover,
+.questions-btn:hover {
+  background-color: #871719;
+}
+
+.nwsltr {
+  background-color: powderblue;
+}
+
+footer {
+    background-color: #873c17;
+		color: white;
+		padding-bottom: 25px;
+
+}
+.followLinks a{
+	padding: 20px;
+	color: white;
+	font-size: 1.4em;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.site-header,
+  .main-nav {
+		display: flex;
+
+>>>>>>> 798061d836159b626d30ad2dc12a37c0e6fabb12
 	}
   .site-header {
     flex-direction: column;
     align-items: center;
   }
   .col {
+<<<<<<< HEAD
     flex: 1;
   }
 	.banner {
@@ -240,11 +458,40 @@ footer {
 	.span_1of_2 {
 		width: 49.2%;
 	}
+=======
+    flex: 1;
+  }
+	.banner {
+		font-size: 1.4em;
+		color: #871717;
+	}
+	.nwsltr-input,
+	.questions-input {
+	width: 75%;
+	float: left;
+	}
+
+	.nwsltr-btn,
+	.questions-btn {
+		width: 22%;
+	}
+	.tagline {
+		font-weight: 700;
+	}
+	.span_1of_2 {
+		width: 49.2%;
+	}
+>>>>>>> 798061d836159b626d30ad2dc12a37c0e6fabb12
 
 @media (min-width: 1025px) {
   .site-header {
     flex-direction: row;
+<<<<<<< HEAD
     justify-content: space-between;
 		padding-left: 20px;
+=======
+    justify-content: space-between;
+		padding-left: 20px;
+>>>>>>> 798061d836159b626d30ad2dc12a37c0e6fabb12
   }
 }
