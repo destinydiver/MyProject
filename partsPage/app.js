@@ -1,5 +1,10 @@
 
-var menuData = 'https://cdn.rawgit.com/destinydiver/MyProject/d72d6579/partsData.json';
+var menuData = {
+  type:"GET",
+  async:true,
+  url:  'https://cdn.rawgit.com/destinydiver/MyProject/d72d6579/partsData.json',
+  dataType:"json"
+}
 
 $.ajax(menuData).done(function(data) {
 
@@ -26,7 +31,9 @@ $.ajax(menuData).done(function(data) {
         }
     });
 
-});
+}).fail(function(xhr,response,error) {
+  alert(error.message);
+});;
 
 
 //May provide this part.
